@@ -4,50 +4,63 @@
 	<meta charset="UTF-8" />
 	<title>title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./fonts/reset.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"> </script>
 </head>
 <body>
     <section class="banner">
-        <img id="leaves" alt="a bunch of leaves" />
-        <img id="odin-logo" 
-        <div id="box-text">
+        <div id="box-text"> 
         </div>
         <p id="odin">ODIN</p>
+        <img id="odin-logo" src="./images/odin-lined.png"> 
     </section>
     <section class="quote">
-        <h3> </h3>
-        <h3> </h3>
+        <h3>This is not a real online service! You know you need something 
+        like this in your life to help you realize your deepest dreams.
+        Sign up <em>now</em> to get started.
+
+        <br/><br/>You <em>know</em> you want to.
+        </h3>
 
     </section>
     <section class="form">
         <h3>Let's do this!</h3>
         <form>
-            <label class="form-label">First Name</label>
-            <input type="text" id="firstName" />
+
+            <div id="first-column">
+                <label class="form-label">First Name</label>
+                <input type="text" id="firstName" />
+
+                <label class="form-label">Email</label>
+                <input type="email" id="email" />
+
+                <label class="form-label error">Password</label>
+                <input type="password" id="password" />
             
-            <label class="form-label">Last Name</label>
-            <input type="text" id="lastName" />
+            </div>
+            
 
+            <div id="second-column">
+                <label class="form-label">Last Name</label>
+                <input type="text" id="lastName" />
+            
+                <label class="form-label">Phone Number</label>
+                <input type="number" id="phoneNumber" />
 
-            <label class="form-label">Email</label>
-            <input type="email" id="email" />
+        
+                <label class="form-label error">Confirm password</label>
+                <input type="password" id="confirmPassword">
 
-            <label class="form-label">Phone Number</label>
-            <input type="number" id="phoneNumber" />
-
-            <label class="form-label">Password</label>
-            <input type="password" id="password" />
-
-            <label class="form-label">Confirm password</label>
-            <input type="password" id="confirmPassword">
+            </div>
+            
 
     </section>
     <section class="create-account"> 
-        <input type="submit" value="Create account" />
+        <input type="submit" value="Create account" id="btnSubmit" />
         </form>
-        <footer>Already have an account? Log in</footer>
+        <footer>Already have an account? <a>Log in</a></footer>
     </section>
 </body>
+<script src="script.js"> </script>
+
 </html>
